@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/9083ecc7c6.js" crossorigin="anonymous"></script>
+    </head>
+    <style>
+        body{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #header{
+            background-color:#092b50;
+        }
+        #heatop{
+            display: flex;
+            flex-direction: row;
+            
+           
+        }
+        #heatop > div{
+         font-size: 20px;
+         font-weight: 700;
+         color: #ffb800;
+         margin: 20px 10px 10px 10px;
+         cursor: pointer;
+        }
+        #heatop >div :hover{
+          color: #09f;
+        }
+
+        
+        #heabot{
+            display: flex;
+            flex-direction: row;
+
+        }
+        #heabot >div :hover{
+            border: 1px solid white;
+            border-radius: 4px;
+            padding: 4px;
+            color: #09f;
+        } 
+       
+        #search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 442px;
+    height: 39px;
+    margin-left: 245px;
+    box-shadow: 0 1.5px 5px 1px hsla(0, 0%, 0%, 0.151);
+    border-radius: 3px;
+}
+
+#search-box > input {
+    border: none;
+    width: 420px;
+    height: 36px;
+    border-radius: 5px;
+    padding: 1px 2px 1px 13px;
+    font-size: 15px;
+    outline: none;
+}
+
+#search-box > img {
+    width: 19px;
+    height: 19px;
+    margin: auto 10px auto 10px;
+}
+.act{
+    background-color: #014f7d;
+    width: 20px;
+}
+#heabot >div{
+         font-size: 16px;
+         font-weight: 500;
+         color: white;
+         margin: 10px 10px 10px 10px;
+         cursor: pointer;
+        }
+        #heabot >div>h1{
+            font-size: 22px;
+         font-weight: 700;
+         color: white;
+         margin: 0px 10px 10px 10px;
+
+        }
+        #account{
+            color: white;
+        }
+        #login{
+            background: transparent;
+            color: white;
+            font-size: 14px ;
+            font-weight: 600;
+            cursor: pointer;
+            padding: 7px;
+
+        }
+        #cart{
+            background: transparent;
+            color: white;
+            font-size: 14px ;
+            font-weight: 600;
+            cursor: pointer;
+
+        }
+        #stickers{
+            display: flex;
+            flex-direction: row;
+
+        }
+        #stickers>div{
+            width: 10%;
+            margin: 10px 0px 10px 0px;
+            cursor: pointer;
+           
+        }
+        #stickers>div>img{
+            max-width: 100%;
+        }
+        #heatop>div>img{
+            width: 70%;
+        }
+        #mody{
+            width:100%;
+           
+        }
+        #mody>img{
+          max-width: 100%; 
+        }
+        #sear{
+            background-color: #ffb800;
+            border: none;
+            font-size: 16px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 400;
+            cursor: pointer;
+        }
+
+
+
+        </style>
+    <body>
+        <div >
+        <div id="header">
+        <div id="heatop">
+            <div style="margin-top: 2px;">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAMAAAAO5y+4AAAAgVBMVEX1xRgAAAD4xxjcsRb8yxnnuhfuvxf////YrhUGBQBdSwnDnBOhghAtJQT1wwNiTwpLPAeZew8WEgL768H99+j2yT741Xj2yDK3kxHhtRZVRQgaFQNRQQj/0BpsVwt6YgwmHwQ6LgasixGPcw7OpRSEag1CNQcfGQP/3Rv/1xsQDQIKezJDAAACj0lEQVRoge2ba5OqIBiACYFau9l22bRQ16w9Z///DzxIQujxXoszO+/zweFFh8dSgZcZ0FSwPXwgW3wctpkSTae7/WplTYvQarXfZd4dsmmVZrQT3r1trRDvp2hrXyvEW3QYxXtA9t5kk3GsAAAAAAAAAAAAAABYBSsKQYc4r/q/kW7MnBwmAueBj82TIhYhdQr4jNxFTNXQzr+WThQzjNjkQUjEaSM+E0Q2kxIRzcR4ruIL6e19K3kDcdI3Yld4F2WvuFtiejfPe2NmtFfvPbEXeycUFzw13kz1Wm+KybWD95O/2JsQHNZ5LxdPFZf4xd4rQZ4RFrwOZ98/5Q0JO9V5Zxifq72YCDVp7T8avB6iZlj2riu9nG7WQRDO23quBm/MZr29i2NeOLNmcYN34h/NqJP3pi9fDvm9sTymslv8PPXwGjR3mdVe9z07JlF2XC+HeW+svzdws2MkP99rH683P8aqTJuecI33Iu9YfipJ3MO74VyPWQO850TWyK4h/erjJSR5xms8MNrnvRJe/REM8HqPgfeLvlv0cu0NmE3vH+292vXqkWhh1fs3UtVHu96Hwe57pVtCdr2OquZ13uBHvOjtXrrVedGyxvtMf+VxnveOEan0+lz3LGWvvmaY11UNVXqjqx52Ct41o2reNcxLLvfSsdprUJg/G8QDxl/hzV+PtNVbyBcMwgHzDY/jVP1ZLd5ifmTgNE7sar3OfV7O27zFfHC+1qXmGXx1/iueGZLeb64n0U35bxq4kjMiiZxShk5r4lCV74tcH+ukv0O+rxYaRIGIi3zWYcGhcv3CbKnL+kapwVYpAAAAAAAAAAAAAAC/g7H2a4y1P2Ws/Thj7T8abb/VWPvLxtlP9w9lWzTR4rKV6QAAAABJRU5ErkJggg==">
+            </div>
+            <div id="search-box">
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Enter Movie Name"
+                />
+               <button id="sear" onclick="movdata()">
+                   Search
+               </button>
+            </div>
+            <div>
+               <span> NEW MOVIES</span> 
+            </div>
+            <div>
+                <span>PRE-BOOKING</span>
+            </div>
+            <div>
+              <span>
+                BLOWOUT
+
+              </span>  
+
+            </div>
+            <div>
+                
+               <button  id="login">
+                <i id="account" class="fas fa-user"></i>
+                Account
+               </button>
+            </div>
+                          <div>
+                            <i id="account" class="fa-solid fa-circle-envelope"></i>
+                          </div>
+                         
+            <div >
+                <button id="cart">
+                    <img src="https://cdn11.bigcommerce.com/s-0kvv9/stencil/3db0b4d0-dc1d-0139-35d7-46e39c32b38c/e/c71c39a0-dc1e-0139-7758-1e80c6e1f80d/img/cart.png">
+           
+                TICKETS
+                </button>
+                 </div>
+        </div>
+        
+        </div>
+        <div id="mody">
+            <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/05/GOTG-VOL3.jpg">
+         </div>
+       
+    </div>
+    </body>
+</html>
+<script>
+    var movdiv = document.getElementById("movshow");
+    
+    async function movdata(){
+     try{
+         let movie=document.getElementById("search-input").value;
+        
+         let response=await fetch(
+            'http://www.omdbapi.com/?t=${movie}&apikey=64e2ff72'
+         );
+         let data=await response.json();
+         
+         if(data.response== "True"){
+         console.log("data",data);
+         
+         }
+         else {
+             console.log("Movie not found");
+         }
+     } catch(err){
+         console.log("err",err);
+     }
+    }   
+    </script>
